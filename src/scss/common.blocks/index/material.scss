@@ -40,7 +40,7 @@
     // .material__title
 
     &__title {
-        position: relative;
+        // position: relative;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -54,7 +54,7 @@
 
         &::after {
             content: "";
-            position: absolute;
+            // position: absolute;
             left: 85px;
             display: block;
             max-width: 503px;
