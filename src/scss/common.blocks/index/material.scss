@@ -1,0 +1,139 @@
+.material {
+    min-height: 490px;
+    padding: 0px 0 40px;
+
+
+    @media(min-width:768px) {
+        padding: 80px 0 120px;
+    }
+
+    // .material_second-text
+
+    &_second-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #9c9c9c;
+        max-width: 495px;
+    }
+
+    // .material__container
+
+    &__container {
+        // display: flex;
+        // justify-content: space-between;
+
+
+        @media(min-width:992px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+    }
+
+    // .material__content
+
+    &__content {
+        padding: 47px 0;
+    }
+
+    // .material__title
+
+    &__title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+        margin-bottom: 20px;
+        max-width: 600px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 85px;
+            display: block;
+            max-width: 503px;
+            width: 100%;
+            height: 1px;
+            background-color: #333;
+        }
+    }
+
+    // .material__text
+
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 600;
+        @include media-adaptiv-font(36, 20);
+        line-height: 170%;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    // .material__button
+
+    &__button {
+        border: 1px solid #3c3c3c;
+        padding: 14px 32px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #333;
+        margin-top: 23px;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: #2c3778ad;
+            color: var(--light-color);
+
+        }
+    }
+
+    // .material__img-collect
+
+    &__img-collect {
+        display: grid;
+        gap: 15px;
+        grid-template-areas:
+            "big   middle"
+            "big   small";
+
+        @media(min-width:576px) {
+            gap: 40px;
+        }
+    }
+
+    // .material__img
+
+    &__img {}
+
+    // .material__img--big
+
+    &__img--big {
+        grid-area: big;
+
+
+        @media(min-width:992px) {
+            padding-top: 98px;
+        }
+    }
+
+    // .material__img--middle
+
+    &__img--middle {
+        grid-area: middle;
+    }
+
+    // .material__img--small
+
+    &__img--small {
+        grid-area: small;
+        padding-bottom: 47px;
+    }
+}

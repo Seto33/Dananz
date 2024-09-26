@@ -1,0 +1,24 @@
+@import "./config-scss/mixin.scss";// mixin
+@import "./config-scss/vars.scss";// vars
+@import "./config-scss/fonts.scss";// fonts
+@import "./config-scss/global.scss";// global
+@import "./config-scss/reset-class.scss";// reset-class
+@import "./config-scss/mix-class.scss";// mix-class
+@import "./repeate.blocks/page.scss";// page
+@import "./repeate.blocks/page__body.scss";// page__body
+@import "./common.blocks/index/count.scss";// count
+@import "./common.blocks/index/theme.scss";// theme
+@import "./repeate.blocks/nav.scss";// nav
+@import "./repeate.blocks/header.scss";// header
+@import "./repeate.blocks/main.scss";// main
+
+// sections
+@import "./common.blocks/index/hero.scss";// hero
+@import "./common.blocks/index/about.scss";// about
+@import "./common.blocks/index/service.scss";// service
+@import "./common.blocks/index/product.scss";// product
+@import "./common.blocks/index/material.scss";// material
+@import "./repeate.blocks/contact.scss";// contact
+// /sections
+
+@import "./repeate.blocks/footer.scss";// footer

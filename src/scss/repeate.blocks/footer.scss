@@ -1,0 +1,155 @@
+.footer {
+	padding: 80px 0 84px;
+
+	// .footer__container
+
+	&__container {
+		@media(min-width:467px) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	// .footer__content
+
+	&__content {}
+
+	// .footer__descr
+
+	&__descr {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+
+		@media(min-width:467px) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	// .footer__logo
+
+	&__logo {}
+
+	// .footer__title
+
+	&__title {
+		font-family: var(--font-family);
+		font-weight: 600;
+		@include media-adaptiv-font(36, 20);
+		line-height: 170%;
+		color: #333;
+	}
+
+	// .footer__regals
+
+	&__regals {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .footer__list-text
+
+	&__list-text {
+		display: flex;
+		font-family: var(--font-family);
+		font-weight: 400;
+		@include media-adaptiv-font(18, 16);
+		line-height: 160%;
+		color: #333;
+		margin-top: 0px;
+
+		&::before {
+			content: "•";
+			font-size: 50px;
+			margin-right: 5px;
+		}
+
+		@media(min-width:768px) {
+			margin-top: 32px;
+		}
+	}
+
+	// .footer__input
+
+	&__input {
+		width: 100%;
+		max-width: 440px;
+		border: none;
+		border-bottom: 1px solid #141414;
+		padding: 15px 0 15px;
+	}
+
+	&__input::placeholder {
+		color: #d9d9d9;
+	}
+
+	// .footer__socials-container
+
+	&__socials-container {
+		display: flex;
+		flex-direction: column;
+		margin-top: 40px;
+		margin-left: auto;
+	}
+
+	// .footer__socials-text
+
+	&__socials-text {
+		font-family: var(--font-family);
+		font-weight: 400;
+		@include media-adaptiv-font(16, 12);
+		line-height: 160%;
+		color: #333;
+		margin-bottom: 15px;
+	}
+
+	// .footer__social
+
+	&__social {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		max-width: 195px;
+	}
+
+	// .footer__social-item
+
+	&__social-item {
+
+		list-style: none;
+		margin-right: 13px;
+
+		@media(min-width:768px) {
+			margin-right: 33px;
+		}
+	}
+
+	// .footer__text-wrapper
+
+	&__text-wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+		width: 100%;
+	}
+
+	// .footer__input-icon
+
+	&__input-icon {
+		width: 25px;
+		height: 10px;
+		align-self: end;
+		z-index: 1;
+		margin-bottom: -10px;
+		cursor: pointer;
+	}
+
+	// .footer__social-icon
+
+	&__social-icon {
+		width: 24px;
+		height: 24px;
+	}
+
+}

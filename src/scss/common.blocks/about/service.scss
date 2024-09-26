@@ -1,0 +1,120 @@
+.service {
+    padding: 55px 0 100px;
+
+    // .service__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .service__content
+
+    &__content {
+        padding: 0 0 40px;
+    }
+
+    // .service__title
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+        margin-bottom: 20px;
+        max-width: 600px;
+
+        &::after {
+            content: "";
+            // left: 125px;
+            display: block;
+            max-width: 516px;
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+        }
+    }
+
+    // .service__subtitle
+
+    &__subtitle {
+        font-family: var(--font-family);
+        font-weight: 600;
+        @include media-adaptiv-font(36, 20);
+        line-height: 170%;
+        max-width: 284px;
+        margin-bottom: 25px;
+        color: #000;
+    }
+
+    // .service__text
+
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        max-width: 470px;
+        color: #9c9c9c;
+    }
+
+    // .service__wrapper
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(280px,1fr));
+        justify-items: center;
+        gap: 18px;
+
+
+    }
+
+    // .service__wrapper-content
+
+    &__wrapper-content {
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+        max-width: 388px;
+        min-height: 295px;
+        text-align: center;
+        padding-top: 20px;
+
+
+    }
+
+    // .service__wrapper-icon
+
+    &__wrapper-icon {
+        align-self: center;
+        width: 63px;
+        height: 63px;
+
+        margin-bottom: 20px;
+        
+    }
+
+    // .service__wrapper-title
+
+    &__wrapper-title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    // .service__wrapper-text
+
+    &__wrapper-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        text-align: center;
+        color: #9c9c9c;
+    }
+}
