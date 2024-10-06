@@ -20,7 +20,10 @@ navLinks.forEach(link => {
     link.classList.toggle("nav__link_active")
 })
     if (burger.classList.contains("burger_active")) {
-        // document.body.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+    }
+    else{
+        document.body.style.overflow = "";
     }
 });
 
@@ -31,7 +34,7 @@ navLinks?.forEach(link => {
 
         nav.classList.remove("nav_active");
         burger.classList.remove("burger_active");
-        // document.body.style.overflow = "";
+        document.body.style.overflow = "";
     });
 
 });
